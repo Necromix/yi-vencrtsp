@@ -18,21 +18,21 @@ The new init.sh doesn't load yi ko files and apps but ko from SDK ver 040<br/>
 
 
 # Others
-Yellow LED: GPIO0_3
-  on  - himm 0x201403FC 0x1
-  off - himm 0x201403FC 0x5
+Yellow LED: GPIO0_3<br/>
+  on  - himm 0x201403FC 0x1<br/>
+  off - himm 0x201403FC 0x5<br/>
 
 Blue LED: Not find
 
 IR-LED: Not find
 
-IR-CUT:
-  on - 	himm 0x201c000c 0x2
-	      sleep 1;
-	      himm 0x201c000c 0x0
+IR-CUT:<br/>
+  on - 	himm 0x201c000c 0x2<br/>
+	sleep 1;<br/>
+	himm 0x201c000c 0x0<br/>
         
-  off- 	himm 0x201c000c 0x1
-	      sleep 1;
-	      himm 0x201c000c 0x0
+  off- 	himm 0x201c000c 0x1<br/>
+	sleep 1;<br/>
+	himm 0x201c000c 0x0<br/>
 
 
