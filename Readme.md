@@ -17,7 +17,22 @@ The new init.sh doesn't load yi ko files and apps but ko from SDK ver 040<br/>
 ./vencrtsp to start RSTP server: (first version is not very stable and can "seg fault") and need to be fixed and improve
 
 
-# SRC
-Need to be cleaned and will be published ...
+# Others
+Yellow LED: GPIO0_3
+  on  - himm 0x201403FC 0x1
+  off - himm 0x201403FC 0x5
+
+Blue LED: Not find
+
+IR-LED: Not find
+
+IR-CUT:
+  on - 	himm 0x201c000c 0x2
+	      sleep 1;
+	      himm 0x201c000c 0x0
+        
+  off- 	himm 0x201c000c 0x1
+	      sleep 1;
+	      himm 0x201c000c 0x0
 
 
