@@ -7,7 +7,7 @@ include ../Makefile.param
 #endif
 
 # target source
-SRC  := $(wildcard *.c) 
+SRC  := $(wildcard *.c)
 OBJ  := $(SRC:%.c=%.o)
 
 TARGET := $(OBJ:%.o=%)
@@ -15,7 +15,7 @@ TARGET := $(OBJ:%.o=%)
 
 all: $(TARGET)
 
-MPI_LIBS := $(REL_LIB)/libmpi.a
+#MPI_LIBS := $(REL_LIB)/libmpi.a
 
 $(TARGET):%:%.o $(COMM_OBJ)
 	$(CC) $(CFLAGS) -lpthread -lm -o $@ $^ $(MPI_LIBS) $(AUDIO_LIBA) $(SENSOR_LIBS)
