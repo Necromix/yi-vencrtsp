@@ -18,6 +18,6 @@ The new init.sh doesn't load yi ko files and apps but ko from SDK ver 040<br/>
 
 
 # SRC
-Need to be cleaned and will be publish ...
+Need to be cleaned and will be published ...
 
 
